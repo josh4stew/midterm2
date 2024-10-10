@@ -1,0 +1,41 @@
+:root{
+    --main-radius: 5px;
+    --main-padding: 5px;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(93,87,107);
+}
+
+.text {
+    height: 5vh;
+}
+
+.text p{
+    text-align: center;
+    color: white
+}
+
+.imageGrid {
+    box-sizing: border-box;
+    padding: 1%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+}
+
+.imageGrid img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Mobile phone viewing */
+@media only screen and (max-width: 600px) {
+    .imageGrid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
+    }
+}
